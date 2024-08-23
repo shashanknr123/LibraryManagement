@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+
+        <section>
+            <h2>Add New Book</h2>
+            <form id="addBookForm">
+                <input type="text" id="newBookName" placeholder="Book Name" required>
+                <input type="number" id="newAvailableBooks" placeholder="Available Books" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Borrow Book</h2>
+            <form id="borrowBookForm">
+                <input type="number" id="borrowBookId" placeholder="Book ID" required>
+                <button type="submit">Borrow Book</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Return Book</h2>
+            <form id="returnBookForm">
+                <input type="number" id="returnBookId" placeholder="Book ID" required>
+                <button type="submit">Return Book</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Update Available Books</h2>
+            <form id="updateBookForm">
+                <input type="number" id="updateBookId" placeholder="Book ID" required>
+                <input type="number" id="updateAvailableBooks" placeholder="New Available Books Number" required>
+                <button type="submit">Update Books</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>View Inventory</h2>
+            <button id="viewInventoryButton">Show Inventory</button>
+            <button id="viewBorrowedButton">Show Borrowed books</button>
+            <div id="inventoryList"></div>
+        </section>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
